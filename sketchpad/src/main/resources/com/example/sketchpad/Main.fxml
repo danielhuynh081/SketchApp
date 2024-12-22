@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.sketchpad.MainController">
+    <top>
+        <ToolBar>
+            <ColorPicker fx:id="colorPicker"/>
+            <ComboBox fx:id="brushSizeComboBox"/>
+            <ComboBox fx:id="brushTypeComboBox"/>
+            <Button fx:id="clearButton" text="Clear"/>
+        </ToolBar>
+    </top>
+    <center>
+        <Canvas fx:id="canvas" width="1800" height="900"/>
+    </center>
+</BorderPane>
